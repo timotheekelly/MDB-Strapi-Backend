@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_component_info_design_guidelines",
+  "info": {
+    "displayName": "DesignGuideline",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "DesignGuidelinesText": {
+      "type": "richtext"
+    },
+    "InfoImages": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
