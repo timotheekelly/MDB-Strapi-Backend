@@ -1,7 +1,9 @@
 {
   "collectionName": "components_component_info_development_guidelines",
   "info": {
-    "displayName": "DevelopmentGuidelines"
+    "displayName": "DevelopmentDetails",
+    "icon": "code",
+    "description": ""
   },
   "options": {},
   "attributes": {
