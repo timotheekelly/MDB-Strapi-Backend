@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_component_info_development_guidelines",
+  "info": {
+    "displayName": "DevelopmentDetails",
+    "icon": "code",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "readme": {
+      "type": "richtext"
+    }
+  }
+}

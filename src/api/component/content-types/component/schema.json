@@ -12,14 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string",
       "unique": true,
       "required": true
-    },
-    "FigmaLink": {
-      "type": "string",
-      "required": false
     },
     "DesignGuideline": {
       "displayName": "DesignGuideline",
@@ -27,8 +23,25 @@
       "repeatable": false,
       "component": "component-info.design-guideline"
     },
-    "VersionNumber": {
-      "type": "decimal"
+    "DevelopmentGuidelines": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component-info.development-guidelines"
+    },
+    "description": {
+      "type": "text"
+    },
+    "component_variants": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::component-variant.component-variant",
+      "mappedBy": "component"
+    },
+    "component_figma_versions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::component-figma-version.component-figma-version",
+      "mappedBy": "component"
     }
   }
 }

@@ -1,25 +1,14 @@
 {
   "collectionName": "components_component_info_design_guidelines",
   "info": {
-    "displayName": "DesignGuideline",
-    "icon": "align-justify",
+    "displayName": "DesignGuidelines",
+    "icon": "pencil-ruler",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "DesignGuidelinesText": {
+    "content": {
       "type": "richtext"
-    },
-    "InfoImages": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
     }
   }
 }

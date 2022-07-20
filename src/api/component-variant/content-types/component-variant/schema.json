@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "component_variants",
+  "info": {
+    "singularName": "component-variant",
+    "pluralName": "component-variants",
+    "displayName": "ComponentVariant"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "component": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::component.component",
+      "inversedBy": "component_variants"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "guidelines": {
+      "type": "richtext"
+    },
+    "component_figma_versions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::component-figma-version.component-figma-version",
+      "mappedBy": "component_variant"
+    }
+  }
+}
