@@ -12,14 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string",
       "unique": true,
       "required": true
-    },
-    "FigmaLink": {
-      "type": "string",
-      "required": false
     },
     "DesignGuideline": {
       "displayName": "DesignGuideline",
@@ -27,8 +23,19 @@
       "repeatable": false,
       "component": "component-info.design-guideline"
     },
-    "VersionNumber": {
-      "type": "decimal"
+    "component_versions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::component-version.component-version",
+      "mappedBy": "component"
+    },
+    "DevelopmentGuidelines": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component-info.development-guidelines"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }
