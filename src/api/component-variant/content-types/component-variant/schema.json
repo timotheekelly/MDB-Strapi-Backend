@@ -4,7 +4,8 @@
   "info": {
     "singularName": "component-variant",
     "pluralName": "component-variants",
-    "displayName": "ComponentVariant"
+    "displayName": "ComponentVariant",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,11 +21,25 @@
     "name": {
       "type": "string"
     },
-    "description": {
-      "type": "richtext"
-    },
     "guidelines": {
       "type": "richtext"
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "figmaLink": {
+      "type": "string"
+    },
+    "figmaProps": {
+      "type": "json"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }
