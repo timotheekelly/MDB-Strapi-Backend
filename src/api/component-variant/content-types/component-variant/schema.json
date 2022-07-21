@@ -25,12 +25,6 @@
     },
     "guidelines": {
       "type": "richtext"
-    },
-    "component_figma_versions": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::component-figma-version.component-figma-version",
-      "mappedBy": "component_variant"
     }
   }
 }
