@@ -42,6 +42,14 @@
       "relation": "oneToMany",
       "target": "api::component-figma-version.component-figma-version",
       "mappedBy": "component"
+    },
+    "component_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }
